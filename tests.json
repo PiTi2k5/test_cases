@@ -1,34 +1,98 @@
 {
 	"tests": [
-		[ "a_download", "Test different ways of triggering downloads from the browser" ],
-		[ "activities_camera_photo", "Triggering the 'record' activity to get a video/photo back to the calling activity" ],
-		[ "async_await", "Testing ES2016's async and await features" ],
-		[ "canvas_and_base64_video", "Can we manipulate the pixels in a base64 encoded video using canvas?" ],
-		[ "canvas_scaling", "Ensuring canvas remains crispy despite scaling" ],
-		[ "canvas/gradients", "Canvas and gradients... slow?" ],
-		[ "css/emoji_shadow", "What happens when you want to have text shadow with emoji text?" ],
-		[ "css/range-thumb-pointer", "Custom range thumb pointer not applied if background not set" ],
-		[ "devicePixelRatio", "Show how to access / monitor window.devicePixelRatio" ],
-		[ "devtools/long-attribute-values", "Long values for attributes should be copied unaltered" ],
-		[ "file_uploads", "Selecting a file for uploading should not crash the browser" ],
-		[ "hidden_attribute", "Checking what is the hidden attribute doing" ],
-		[ "gradient_transitions", "Can we, or not, have CSS transitions on gradient backgrounds?" ],
-		[ "round_border_and_gaps", "Why is there a gap in my border?" ],
-		[ "smooth_scrolling", "Native smooth scrolling-no jQuery plugins!" ],
-		[ "srcset", "Width of inline block containing images with srcset attribute is wrong" ],
-		[ "servo/gaps", "Servo: Investigating strange gaps between display: inline-block rows" ],
-		[ "tab_and_emoji", "Page titles with emoji might get wrongly ellipsised" ],
-		[ "videos/from_blob", "Videos: videos played from a blob don't seem to loop?" ],
-		[ "videos/max_length", "Videos: hitting maximum MediaRecorder video length?" ],
-		[ "videos/media_recorder_playback_rate", "Videos: Recording video with playbackRate = 0.5 should generate video with double duration" ],
-		[ "web_audio/bias", "Web Audio: Applying bias to a gain node to generate on-purpose clipping of a sine signal (but it does not seem to work)" ],
-		[ "web_audio/buffersourcenodesgc", "Web Audio: looped buffer source nodes don't seem to be Garbage Collected" ],
-		[ "web_audio/buffersourcenotstereo", "Web Audio: a buffer source with two channels should be played in stereo" ],
-		[ "web_audio/mp4_mediasource", "Web Audio: Using an MP4 video as media source" ],
-		[ "web_audio/settimeout", "Web Audio: Test if scheduling audio via setTimeout results in smooth audio when the tab is in background" ],
-		[ "web_audio/thx_cutting_out", "Web Audio: Playing THX sound" ],
-		[ "web_components/shadow_dom", "Can I Shadow DOM?" ],
-		[ "web_components/shadow_dom_and_selectors", "Web Components: Shadow DOM and CSS Selectors" ],
-		[ "webgl/dirty_buffer", "WebGL: dirty buffer" ]
+		[
+			"a_download",
+			"Test different ways of triggering downloads from the browser"
+		],
+		[
+			"activities_camera_photo",
+			"Triggering the 'record' activity to get a video/photo back to the calling activity"
+		],
+		["async_await", "Testing ES2016's async and await features"],
+		[
+			"canvas_and_base64_video",
+			"Can we manipulate the pixels in a base64 encoded video using canvas?"
+		],
+		["canvas_scaling", "Ensuring canvas remains crispy despite scaling"],
+		["canvas/gradients", "Canvas and gradients... slow?"],
+		[
+			"css/emoji_shadow",
+			"What happens when you want to have text shadow with emoji text?"
+		],
+		[
+			"css/range-thumb-pointer",
+			"Custom range thumb pointer not applied if background not set"
+		],
+		[
+			"devicePixelRatio",
+			"Show how to access / monitor window.devicePixelRatio"
+		],
+		[
+			"devtools/long-attribute-values",
+			"Long values for attributes should be copied unaltered"
+		],
+		[
+			"file_uploads",
+			"Selecting a file for uploading should not crash the browser"
+		],
+		["hidden_attribute", "Checking what is the hidden attribute doing"],
+		[
+			"gradient_transitions",
+			"Can we, or not, have CSS transitions on gradient backgrounds?"
+		],
+		["round_border_and_gaps", "Why is there a gap in my border?"],
+		["smooth_scrolling", "Native smooth scrolling-no jQuery plugins!"],
+		[
+			"srcset",
+			"Width of inline block containing images with srcset attribute is wrong"
+		],
+		[
+			"servo/gaps",
+			"Servo: Investigating strange gaps between display: inline-block rows"
+		],
+		["tab_and_emoji", "Page titles with emoji might get wrongly ellipsised"],
+		[
+			"videos/from_blob",
+			"Videos: videos played from a blob don't seem to loop?"
+		],
+		[
+			"videos/max_length",
+			"Videos: hitting maximum MediaRecorder video length?"
+		],
+		[
+			"videos/media_recorder_playback_rate",
+			"Videos: Recording video with playbackRate = 0.5 should generate video with double duration"
+		],
+		[
+			"web_audio/bias",
+			"Web Audio: Applying bias to a gain node to generate on-purpose clipping of a sine signal (but it does not seem to work)"
+		],
+		[
+			"web_audio/buffersourcenodesgc",
+			"Web Audio: looped buffer source nodes don't seem to be Garbage Collected"
+		],
+		[
+			"web_audio/buffersourcenotstereo",
+			"Web Audio: a buffer source with two channels should be played in stereo"
+		],
+		[
+			"web_audio/clip_onoscstart",
+			"Web Audio: oscillators with gain nodes should not make clip sounds on start"
+		],
+		[
+			"web_audio/mp4_mediasource",
+			"Web Audio: Using an MP4 video as media source"
+		],
+		[
+			"web_audio/settimeout",
+			"Web Audio: Test if scheduling audio via setTimeout results in smooth audio when the tab is in background"
+		],
+		["web_audio/thx_cutting_out", "Web Audio: Playing THX sound"],
+		["web_components/shadow_dom", "Can I Shadow DOM?"],
+		[
+			"web_components/shadow_dom_and_selectors",
+			"Web Components: Shadow DOM and CSS Selectors"
+		],
+		["webgl/dirty_buffer", "WebGL: dirty buffer"]
 	]
 }

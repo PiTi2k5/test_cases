@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<title>clip on oscillator start</title>
+		<script src="demo.js"></script>
+	</head>
+	<body>
+		<h1>Start oscillator(s) with fade in</h1>
+		<p>
+			This should start a number of oscillators (depending on which button you
+			press).
+		</p>
+		<p>
+			Each oscillator is connected to its individual gain node, whose gain
+			property is set to fade in from 0.0 to 1.0 and so that way we
+			<em>should</em> avoid clippity clip sounds when the oscillator is started.
+		</p>
+		<p>Results as of today 29 October 2024 (using macOS 13.7):</p>
+		<ul>
+			<li>
+				Firefox 133: it does NOT apply the ramp on the gain for some odd reason,
+				the output starts noticeably saturated when playing 9+ voices
+			</li>
+			<li>Chrome 130: applies the ramp, saturated with 2+ voices</li>
+			<li>
+				Safari 18.0.1/605.1.15: seems to apply the ramp, but there is clipping.
+				The recorded file is saturated with 2+ voices
+			</li>
+		</ul>
+		<p>Start... <span id="buttons"></span> oscillators with fade in</p>
+		<h2>Recordings</h2>
+		<div id="recordings">
+			<em
+				>(recordings will be here after you start oscillators, if we can
+				record)</em
+			>
+		</div>
+		<style>
+			#recordings {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+	</body>
+</html>
