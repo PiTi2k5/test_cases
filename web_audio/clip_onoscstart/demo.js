@@ -68,7 +68,8 @@ window.addEventListener("load", function () {
 		decayTime
 	) {
 		let fadeOutEnd = startTime + 0.5;
-		let decayEnd = fadeOutEnd + sustainTime + decayTime;
+		let decayStart = fadeOutEnd + sustainTime;
+		let decayEnd = decayStart + decayTime;
 		let stopTime = decayEnd + 0.1;
 
 		let gainNode = new GainNode(audioContext);
@@ -76,6 +77,7 @@ window.addEventListener("load", function () {
 
 		gainNode.gain.value = 0;
 		gainNode.gain.linearRampToValueAtTime(1, fadeOutEnd);
+		gainNode.gain.setValueAtTime(1.0, decayStart);
 		gainNode.gain.linearRampToValueAtTime(0, decayEnd);
 
 		oscNode.frequency.setValueAtTime(freq, startTime);
