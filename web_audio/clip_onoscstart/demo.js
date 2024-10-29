@@ -67,8 +67,8 @@ window.addEventListener("load", function () {
 		sustainTime,
 		decayTime
 	) {
-		let fadeOutEnd = startTime + 0.5;
-		let decayStart = fadeOutEnd + sustainTime;
+		let fadeInEnd = startTime + 0.5;
+		let decayStart = fadeInEnd + sustainTime;
 		let decayEnd = decayStart + decayTime;
 		let stopTime = decayEnd + 0.1;
 
@@ -76,7 +76,10 @@ window.addEventListener("load", function () {
 		let oscNode = new OscillatorNode(audioContext);
 
 		gainNode.gain.value = 0;
-		gainNode.gain.linearRampToValueAtTime(1, fadeOutEnd);
+		// If you use the line below, then the bug does not happen in Firefox
+		// gainNode.gain.setValueAtTime(0.0, startTime);
+
+		gainNode.gain.linearRampToValueAtTime(1, fadeInEnd);
 		gainNode.gain.setValueAtTime(1.0, decayStart);
 		gainNode.gain.linearRampToValueAtTime(0, decayEnd);
 
