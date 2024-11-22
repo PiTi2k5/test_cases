@@ -25,6 +25,7 @@ async function decodeAudioAndShowOutput(mediaSrcEl, textArea) {
 	let audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
 
 	let lines = [];
+	lines.push(srcURL);
 	lines.push(`Channel count: ${audioBuffer.numberOfChannels}`);
 	for (let i = 0; i < audioBuffer.numberOfChannels; i++) {
 		let channelData = audioBuffer.getChannelData(i);
