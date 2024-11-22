@@ -41,6 +41,10 @@
 			"Can we, or not, have CSS transitions on gradient backgrounds?"
 		],
 		["media/audio_video", "Using audio in place of video src, and the reverse"],
+		[
+			"media/audio_video_decode_audio",
+			"Decoding audio from <audio> and <video>"
+		],
 		["round_border_and_gaps", "Why is there a gap in my border?"],
 		["smooth_scrolling", "Native smooth scrolling-no jQuery plugins!"],
 		[
